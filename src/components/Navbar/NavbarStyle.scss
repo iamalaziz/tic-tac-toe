@@ -1,0 +1,49 @@
+header {
+  * {
+    color: #fff;
+  }
+  background-color: #3b5de7;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 50px;
+  padding: 10px 30px;
+  border-radius: 10px;
+  .title {
+    display: flex;
+    align-items: center;
+    h2 {
+      font-size: 15px;
+      line-height: 1;
+    }
+  }
+  .register {
+    display: flex;
+    button {
+      border: none;
+      background: none;
+      appearance: none;
+      font-size: 1rem;
+      padding: 5px 15px;
+      transition: .3s ease;
+      cursor: pointer;
+      &:hover {
+        background-color: #eff2f7;
+        border-radius: 6px;
+        color: #3b5de7;
+      }
+    }
+    .signup-btn::after{
+      content: "";
+      position: absolute;
+      width: 1px;
+      height: 20px;
+      background-color: #fff;
+    }
+  }
+
+  img {
+    width: 50px;
+    margin-right: 20px;
+  }
+}
