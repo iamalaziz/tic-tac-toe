@@ -1,4 +1,4 @@
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 
 import "./RegStyle.scss";
 import { useAuth } from "../../context/Auth";
@@ -18,7 +18,7 @@ const SignUp = ({ setSignUpModal }) => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setSignUpModal(false)
+
     if (pwd !== matchPwd) {
       return setErrMsg("Passwords do not match");
     }
@@ -62,12 +62,14 @@ const SignUp = ({ setSignUpModal }) => {
             required
             onChange={(e) => setPwd(e.target.value)}
             autoComplete="off"
+            placeholder="Password"
           />
           <label htmlFor="confirm_pwd">Confirm Password</label>
           <input
             type="password"
             id="confirm_pwd"
             onChange={(e) => setMatchPwd(e.target.value)}
+            placeholder="Confirm password"
             required
           />
           <button type="submit" className="signup">
