@@ -19,7 +19,7 @@ const Logout = ({ setLogoutModal }) => {
     }
   };
   return (
-    <div className="overlay">
+    <div className="overlay" onClick={() => navigate("/")}>
       {error !== "" && alert(error)}
       <div className="logout">
         <p>Are you sure to logout?</p>

@@ -10,7 +10,7 @@ function Square({ id, value, handleClick, board }) {
           id === board[0] || id === board[1] || id === board[2] ? "changed" : ""
         }
       >
-        {value=="X" ? <Cross /> : value == "O" ? <Circle /> : null}
+        {value === "X" ? <Cross /> : value === "O" ? <Circle /> : null}
       </div>
     </div>
   );
