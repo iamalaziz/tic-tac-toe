@@ -2,13 +2,13 @@
   <img src="src/assets/logo.png" alt="logo" width="200"/>
 </p>
 
-# 🚀 Tic Tac Toe 
+# 🚀 TIC TAC TOE 
 
-**An implementation of Tic-tac-toe game in ReactJS. For AI used the Minimax Algorithm**
+**An implementation of Tic-Tac-Toe Game in ReactJS. For AI used the Minimax Algorithm**
 
 *Not deployed yet* 
 
-<p align="center">== ❗️**In Progress** ==</p>
+<p align="center">❗️**In Progress**</p>
 
 ---
 
