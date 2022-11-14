@@ -1,7 +1,8 @@
 <p align="center">
   <img src="src/assets/logo.png" alt="logo" width="200"/>
 </p>
-# 🚀  Tic Tac Toe 
+
+# 🚀 Tic Tac Toe 
 
 **An implementation of Tic-tac-toe game in ReactJS. For AI used the Minimax Algorithm**
 
