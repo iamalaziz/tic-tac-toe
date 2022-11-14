@@ -5,6 +5,20 @@
 
                                                         ❗️**In Progress** 
 
+---
+
+### Completed Components!
+
+- ✅ Navbar
+- ✅ Board
+- ✅ Cross & Circle Animation
+- ✅ Scores tablet
+- ✅ Authentication
+- ✅ Modals
+- ✅ Sign Up, Login, Logout
+
+---
+
 ### Technology
 
 ---
@@ -23,19 +37,7 @@
 - react-router-dom: 6.4.3
 - sass: 1.56.0
 - react-icons: 4.6.0 
-
----
-
-### Completed
-
-- ✅ Navbar
-- ✅ Board
-- ✅ Cross & Circle Animation
-- ✅ Scores tablet
-- ✅ Authentication
-- ✅ Modals
-- ✅ Sign Up, Login, Logout
-
+- 
 ---
 
 ### *Need to be done*
