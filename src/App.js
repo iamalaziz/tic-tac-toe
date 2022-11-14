@@ -5,8 +5,8 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import SignUp from "./components/Register/SignUp";
 import Login from "./components/Register/Login";
 import Logout from "./components/Register/Logout";
-import Board from "./components/Board/Board";
-// import PrivateRoute from "./components/Register/PrivateRoute";
+import Game from "./components/Game/Game";
+
 
 function App() {
   return (
@@ -15,7 +15,7 @@ function App() {
         <Fragment>
           <Navbar />
           <Routes>
-            <Route path="/" element={<Board />} />
+            <Route path="/" element={<Game />} />
             <Route path="/signup" element={<SignUp />} />
             <Route path="/login" element={<Login />} />
             <Route path="/logout" element={<Logout />} />

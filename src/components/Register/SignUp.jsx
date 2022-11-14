@@ -5,8 +5,9 @@ import { useAuth } from "../../context/Auth";
 import { Link } from "react-router-dom";
 import { HiOutlineUserCircle, HiOutlineMail } from "react-icons/hi";
 import { MdLockOutline } from "react-icons/md";
+import { useNavigate } from "react-router-dom";
 
-const SignUp = ({ setSignUpModal }) => {
+const SignUp = () => {
   const [email, setEmail] = useState("");
   const [user, setUser] = useState("");
   const [pwd, setPwd] = useState("");
@@ -16,6 +17,7 @@ const SignUp = ({ setSignUpModal }) => {
   const [loading, setLoading] = useState(false);
 
   const { signup } = useAuth();
+  const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -27,15 +29,15 @@ const SignUp = ({ setSignUpModal }) => {
     try {
       setErrMsg("");
       await signup(email, pwd);
+      navigate("/");
     } catch {
       setErrMsg("Failed to create an account");
     }
     setLoading(false);
-    console.log(user, email, pwd);
   };
 
   return (
-    <div className="overlay" onClick={() => setSignUpModal(false)}>
+    <div className="overlay" onClick={() => navigate("/")}>
       <div className="container" onClick={(e) => e.stopPropagation()}>
         <h1>Sign Up</h1>
         <form onSubmit={handleSubmit}>

@@ -1,0 +1,32 @@
+.cross .line1 {
+  position: absolute;
+}
+.cross .line1 path {
+  animation-delay: 0.25s;
+}
+.cross path {
+  animation: draw 0.5s forwards;
+  stroke: #36dbd7;
+}
+.cross line {
+  animation-delay: 1s;
+}
+.circle {
+  transform: rotateY(180deg) rotate(-35deg);
+
+}
+.circle circle {
+  animation-fill-mode: forwards;
+  animation-name: draw;
+}
+
+.circle circle {
+  animation-duration: 1s;
+  stroke: #f62459;
+}
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+/* #f62459 */

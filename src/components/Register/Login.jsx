@@ -6,7 +6,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { HiOutlineUserCircle } from "react-icons/hi";
 import { MdLockOutline } from "react-icons/md";
 
-const Login = ({ setLoginModal }) => {
+const Login = () => {
   const emailRef = useRef();
   const pwdRef = useRef();
   const { login } = useAuth();
@@ -20,18 +20,16 @@ const Login = ({ setLoginModal }) => {
     setLoading(true);
     try {
       setError("");
-      navigate("/");
       await login(emailRef.current.value, pwdRef.current.value);
+      navigate("/");
     } catch {
       setError("Failed to log in");
     }
     setLoading(false);
   };
 
-  console.log(emailRef, pwdRef);
-
   return (
-    <div className="overlay" onClick={() => setLoginModal(false)}>
+    <div className="overlay" onClick={() => navigate("/")}>
       <div className="container" onClick={(e) => e.stopPropagation()}>
         <h1>Login</h1>
         {error !== "" ? <div>{error}</div> : <p>No Error</p>}

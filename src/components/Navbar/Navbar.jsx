@@ -1,15 +1,13 @@
-import React, { useState } from "react";
 import "./NavbarStyle.scss";
 import SignUp from "../Register/SignUp";
 import Login from "../Register/Login";
 import Logo from "../../assets/logo.png";
 import Logout from "../Register/Logout";
 import { useAuth } from "../../context/Auth";
+import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
-  const [signUpModal, setSignUpModal] = useState(false);
-  const [loginModal, setLoginModal] = useState(false);
-  const [logoutModal, setLogoutModal] = useState(false);
+  const navigate = useNavigate();
 
   const { currentUser } = useAuth();
 
@@ -24,20 +22,15 @@ const Navbar = () => {
       <h3 className="user">{currentUser ? currentUser.email : "No user"}</h3>
       <div className="register">
         {currentUser ? (
-          <button onClick={() => setLogoutModal(true)}>Logout</button>
+          <button onClick={() => navigate("/logout")}>Logout</button>
         ) : (
           <>
-            <button onClick={() => setSignUpModal(true)}>
-              Sign Up
-            </button>
+            <button onClick={() => navigate("/signup")}>Sign Up</button>
             <div className="line"></div>
-            <button onClick={() => setLoginModal(true)}>Log In</button>
+            <button onClick={() => navigate("/login")}>Log In</button>
           </>
         )}
       </div>
-      {signUpModal ? <SignUp setSignUpModal={setSignUpModal} /> : null}
-      {loginModal ? <Login setLoginModal={setLoginModal} /> : null}
-      {logoutModal ? <Logout setLogoutModal={setLogoutModal} /> : null}
     </header>
   );
 };
