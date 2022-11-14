@@ -8,7 +8,7 @@
 
 *Not deployed yet* 
 
-                                                        ❗️**In Progress** 
+<p align="center">== ❗️**In Progress** ==</p>
 
 ---
 
