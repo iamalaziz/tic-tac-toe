@@ -53,3 +53,7 @@
 4. leaderboard
 5. sidebar menu
 6. validation
+7. Mobile Menu
+8. Footer
+9. Deploy
+10. LocalStorage
