@@ -1,4 +1,4 @@
-# 🚀  Tic Tac Toe ![alt text](src/assets/logo.png)
+# 🚀  Tic Tac Toe <img src="src/assets/logo.png" alt="logo" width="200"/>
 
 **An implementation of Tic-tac-toe game in ReactJS. For AI used the Minimax Algorithm**
 *Not deployed yet* 
