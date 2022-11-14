@@ -1,6 +1,9 @@
-# Tic Tac Toe
+# 🚀  Tic Tac Toe
 
-**In progress**
+**An implementation of Tic-tac-toe game in ReactJS. For AI used the Minimax Algorithm**
+*Not deployed yet* 
+
+                                                        ❗️**In Progress** 
 
 ### Technology
 
@@ -11,14 +14,27 @@
 - CSS3
 - JavaScript (React JS)
 
-#### Frameworks
+#### Frameworks & 
 - React JS
+- Context API
 
 #### NPM install packages
 - firebase: 9.13.0
 - react-router-dom: 6.4.3
 - sass: 1.56.0
 - react-icons: 4.6.0 
+
+---
+
+### Completed
+
+- ✅ Navbar
+- ✅ Board
+- ✅ Cross & Circle Animation
+- ✅ Scores tablet
+- ✅ Authentication
+- ✅ Modals
+- ✅ Sign Up, Login, Logout
 
 ---
 
