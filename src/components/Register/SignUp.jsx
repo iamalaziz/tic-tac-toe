@@ -1,11 +1,12 @@
-import { useState, useRef, useEffect } from "react";
+import { useState } from "react";
 
 import "./RegStyle.scss";
 import { useAuth } from "../../context/Auth";
 import { Link } from "react-router-dom";
+import { HiOutlineUserCircle, HiOutlineMail } from "react-icons/hi";
+import { MdLockOutline } from "react-icons/md";
 
 const SignUp = ({ setSignUpModal }) => {
-
   const [email, setEmail] = useState("");
   const [user, setUser] = useState("");
   const [pwd, setPwd] = useState("");
@@ -32,46 +33,54 @@ const SignUp = ({ setSignUpModal }) => {
     setLoading(false);
     console.log(user, email, pwd);
   };
-  
+
   return (
     <div className="overlay" onClick={() => setSignUpModal(false)}>
       <div className="container" onClick={(e) => e.stopPropagation()}>
         <h1>Sign Up</h1>
         <form onSubmit={handleSubmit}>
-          <label htmlFor="user">Username</label>
-          <input
-            type="text"
-            id="user"
-            placeholder="Name"
-            onChange={(e) => setUser(e.target.value)}
-            required
-            autoComplete="off"
-          />
-          <label htmlFor="email">Email</label>
-          <input
-            type="email"
-            id="email"
-            placeholder="Email"
-            onChange={(e) => setEmail(e.target.value)}
-            required
-          />
-          <label htmlFor="pwd">Password</label>
-          <input
-            type="password"
-            id="pwd"
-            required
-            onChange={(e) => setPwd(e.target.value)}
-            autoComplete="off"
-            placeholder="Password"
-          />
-          <label htmlFor="confirm_pwd">Confirm Password</label>
-          <input
-            type="password"
-            id="confirm_pwd"
-            onChange={(e) => setMatchPwd(e.target.value)}
-            placeholder="Confirm password"
-            required
-          />
+          <div className="textbox">
+            <HiOutlineUserCircle />
+            <input
+              type="text"
+              id="user"
+              placeholder="Username"
+              onChange={(e) => setUser(e.target.value)}
+              required
+              autoComplete="off"
+            />
+          </div>
+          <div className="textbox">
+            <HiOutlineMail />
+            <input
+              type="email"
+              id="email"
+              placeholder="Email"
+              onChange={(e) => setEmail(e.target.value)}
+              required
+            />
+          </div>
+          <div className="textbox">
+            <MdLockOutline />
+            <input
+              type="password"
+              id="pwd"
+              required
+              onChange={(e) => setPwd(e.target.value)}
+              autoComplete="off"
+              placeholder="Password"
+            />
+          </div>
+          <div className="textbox">
+            <MdLockOutline />
+            <input
+              type="password"
+              id="confirm_pwd"
+              onChange={(e) => setMatchPwd(e.target.value)}
+              placeholder="Confirm password"
+              required
+            />
+          </div>
           <button type="submit" className="signup">
             SIGN UP
           </button>

@@ -27,9 +27,10 @@ const Navbar = () => {
           <button onClick={() => setLogoutModal(true)}>Logout</button>
         ) : (
           <>
-            <button onClick={() => setSignUpModal(true)} className="signup-btn">
+            <button onClick={() => setSignUpModal(true)}>
               Sign Up
             </button>
+            <div className="line"></div>
             <button onClick={() => setLoginModal(true)}>Log In</button>
           </>
         )}

@@ -33,12 +33,11 @@ header {
         color: #3b5de7;
       }
     }
-    .signup-btn::after{
-      content: "";
-      position: absolute;
+    .line {
       width: 1px;
-      height: 20px;
+      height: 30px;
       background-color: #fff;
+      margin: 0 5px;
     }
   }
 

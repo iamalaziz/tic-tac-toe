@@ -2,7 +2,9 @@ import { useRef, useState } from "react";
 import "./RegStyle.scss";
 import { IoMdLock } from "react-icons/io";
 import { useAuth } from "../../context/Auth";
-import {Link, useNavigate} from 'react-router-dom'
+import { Link, useNavigate } from "react-router-dom";
+import { HiOutlineUserCircle } from "react-icons/hi";
+import { MdLockOutline } from "react-icons/md";
 
 const Login = ({ setLoginModal }) => {
   const emailRef = useRef();
@@ -20,14 +22,13 @@ const Login = ({ setLoginModal }) => {
       setError("");
       navigate("/");
       await login(emailRef.current.value, pwdRef.current.value);
-
     } catch {
       setError("Failed to log in");
     }
     setLoading(false);
   };
 
-  console.log(emailRef, pwdRef)
+  console.log(emailRef, pwdRef);
 
   return (
     <div className="overlay" onClick={() => setLoginModal(false)}>
@@ -35,20 +36,24 @@ const Login = ({ setLoginModal }) => {
         <h1>Login</h1>
         {error !== "" ? <div>{error}</div> : <p>No Error</p>}
         <form onSubmit={handleSubmit}>
-          <label htmlFor="email">Email</label>
-          <input
-            type="email"
-            id="email"
-            placeholder="Enter email"
-            ref={emailRef}
-          />
-          <label htmlFor="pwd">Password</label>
-          <input
-            type="password"
-            id="pwd"
-            placeholder="Enter password"
-            ref={pwdRef}
-          />
+          <div className="textbox">
+            <HiOutlineUserCircle />
+            <input
+              type="email"
+              id="email"
+              placeholder="Enter Email"
+              ref={emailRef}
+            />
+          </div>
+          <div className="textbox">
+            <MdLockOutline />
+            <input
+              type="password"
+              id="pwd"
+              placeholder="Enter password"
+              ref={pwdRef}
+            />
+          </div>
           <div className="remember">
             <input type="checkbox" id="rem" />
             <label htmlFor="rem">Remember me</label>
