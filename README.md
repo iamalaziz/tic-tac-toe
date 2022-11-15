@@ -28,14 +28,13 @@
 
 ---
 
-#### Languages
-- HTML5
-- CSS3
-- JavaScript (React JS)
+#### Languages and Frameworks
 
-#### Frameworks & 
-- React JS
-- Context API
+![My Skills](https://skills.thijs.gg/icons?i=js,html,scss,react,firebase)
+
+#### State Management 
+
+I used Context API to pass data through components
 
 #### NPM install packages
 - firebase: 9.13.0
