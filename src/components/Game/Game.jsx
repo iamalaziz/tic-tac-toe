@@ -13,7 +13,6 @@ function Game() {
   return (
     <div className="Game">
       <Board setScores={setScores} />
-      <div>Hello</div>
       <Scores scores={scores} />
     </div>
   );

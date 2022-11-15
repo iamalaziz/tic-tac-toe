@@ -12,7 +12,7 @@ import Game from "./components/Game/Game";
 function App() {
   return (
     <div className="App bgstyle">
-      <Router>
+      <Router hashType="hashbang" basename="/tic-tac-toe">
         <Fragment>
           <Navbar />
           <div id="stars"></div>
