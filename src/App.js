@@ -8,12 +8,14 @@ import Logout from "./components/Register/Logout";
 import Game from "./components/Game/Game";
 
 
+
 function App() {
   return (
-    <div className="App">
+    <div className="App bgstyle">
       <Router>
         <Fragment>
           <Navbar />
+          <div id="stars"></div>
           <Routes>
             <Route path="/" element={<Game />} />
             <Route path="/signup" element={<SignUp />} />
