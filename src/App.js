@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
 
 import Navbar from "./components/Navbar/Navbar";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { HashRouter as Router, Route, Routes } from "react-router-dom";
 import SignUp from "./components/Register/SignUp";
 import Login from "./components/Register/Login";
 import Logout from "./components/Register/Logout";
