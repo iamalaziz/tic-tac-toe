@@ -7,12 +7,10 @@ import Login from "./components/Register/Login";
 import Logout from "./components/Register/Logout";
 import Game from "./components/Game/Game";
 
-
-
 function App() {
   return (
     <div className="App bgstyle">
-      <Router hashType="hashbang" basename="/tic-tac-toe">
+      <Router>
         <Fragment>
           <Navbar />
           <div id="stars"></div>
