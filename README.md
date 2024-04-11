@@ -56,3 +56,16 @@ I used Context API to pass data through components
 8. Footer
 9. Deploy
 10. LocalStorage
+
+
+### Demo
+
+<img width="1009" alt="Screenshot 2024-04-11 at 2 25 56 PM" src="https://github.com/iamalaziz/tic-tac-toe/assets/81867375/d85b0633-92cf-474c-8486-85840bad1160">
+
+
+<img width="1011" alt="Screenshot 2024-04-11 at 2 25 12 PM" src="https://github.com/iamalaziz/tic-tac-toe/assets/81867375/f7266a07-54e1-41b1-b299-7dafe08f0952">
+
+
+<img width="1006" alt="Screenshot 2024-04-11 at 2 25 27 PM" src="https://github.com/iamalaziz/tic-tac-toe/assets/81867375/61085c57-6836-4ea0-9c91-0f01a57682cd">
+
+
